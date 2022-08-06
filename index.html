@@ -529,30 +529,32 @@
     <footer class="footer">
       <div class="footer__container container">
         <div class="footer-nav">
-          <a class="footer-logo link" href="./index.html"
-            ><span class="accent-logo">Web</span>Studio</a
+          <a class="footer-nav__logo logo link" href="./index.html"
+            ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address">
-            <ul class="address-list list">
-              <li class="address-item">
-                <p class="address-desc">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="address__list list">
+              <li class="address__item">
+                <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
               </li>
-              <li class="address-item">
-                <a class="address-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <li class="address__item">
+                <a class="address__link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
               </li>
-              <li class="address-item">
-                <a class="address-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
         <div class="footer-socials">
-          <p class="socials-title">приєднуйтесь</p>
-          <ul class="list socials-list footer-socials-list">
-            <li class="socials-item">
+          <p class="footer-socials__title">приєднуйтесь</p>
+          <ul class="footer-socials__list list socials-list">
+            <li class="footer-socials__item socials-item">
               <a
                 href="https://instagram.com/"
-                class="link socials-link footer-socials-link"
+                class="footer-socials__link link socials-link"
                 rel="noreferrer noopener"
                 target="_blank"
                 aria-label="instagram"
@@ -562,10 +564,10 @@
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="footer-socials__item socials-item">
               <a
                 href="https://twitter.com/"
-                class="link socials-link footer-socials-link"
+                class="footer-socials__link link socials-link"
                 rel="noreferrer noopener"
                 target="_blank"
                 aria-label="twitter"
@@ -575,10 +577,10 @@
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="footer-socials__item socials-item">
               <a
                 href="https://facebook.com/"
-                class="link socials-link footer-socials-link"
+                class="footer-socials__link link socials-link"
                 rel="noreferrer noopener"
                 target="_blank"
                 aria-label="facebook"
@@ -588,10 +590,10 @@
                 </svg>
               </a>
             </li>
-            <li class="socials-item">
+            <li class="footer-socials__item socials-item">
               <a
                 href="https://www.linkedin.com/"
-                class="link socials-link footer-socials-link"
+                class="footer-socials__link link socials-link"
                 rel="noreferrer noopener"
                 target="_blank"
                 aria-label="linkedin"
@@ -604,20 +606,20 @@
           </ul>
         </div>
         <div class="footer-sub">
-          <strong class="sub-title">Підпишіться на розсилку</strong>
-          <form class="sub">
-            <label class="visually-hidden" for="sub-email">E-mail</label>
+          <strong class="footer-sub__title">Підпишіться на розсилку</strong>
+          <form class="footer-sub__form">
+            <label class="footer-sub__label visually-hidden" for="sub-email">E-mail</label>
             <input
-              class="sub-email"
+              class="footer-sub__email"
               type="email"
               name="sub-email"
               required
               placeholder="E-mail"
               id="sub-email"
             />
-            <button class="sub-btn btn btn-current" type="submit">
+            <button class="footer-sub__btn btn btn-current" type="submit">
               Підписатися
-              <svg class="sub-icon" width="24" height="24">
+              <svg class="footer-sub__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
