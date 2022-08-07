@@ -37,16 +37,6 @@
     color: var(--white-cl);
 }
 
-.register-btn {
-    margin: 0 auto;
-    padding: 10px 52px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30 / 16);
-    text-align: center;
-    letter-spacing: 0.06em;
-}
-
 .filter-btn {
     padding: 6px 22px;
     font-weight: 500;
@@ -54,29 +44,5 @@
     line-height: calc(26 / 16);
     text-align: center;
     letter-spacing: 0.03em;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    padding: 5px;
-
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: transparent;
-    cursor: pointer;
-
-    transition: fill var(--anim-main);
-
-    &:hover,
-    &:focus {
-        fill: var(--accent-txt-cl);
-    }
 }
 
