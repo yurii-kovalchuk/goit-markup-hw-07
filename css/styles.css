@@ -98,6 +98,43 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.hero-btn {
+  padding: 10px 32px;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  color: var(--white-cl);
+}
+
+.register-btn {
+  margin: 0 auto;
+  padding: 10px 52px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+.filter-btn {
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.btn--current {
+  background-color: var(--accent-txt-cl);
+  color: var(--white-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -317,20 +354,6 @@ img {
   color: var(--white-cl);
 }
 
-.hero__btn {
-  padding: 10px 32px;
-  margin: 0 auto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-  background-color: var(--accent-txt-cl);
-  color: var(--white-cl);
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 /* Feature section */
 
 .features {
@@ -468,22 +491,6 @@ img {
   gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
-}
-
-.filter-btn {
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: calc(26 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.btn-current {
-  background-color: var(--accent-txt-cl);
-  color: var(--white-cl);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .projects-item {
@@ -717,7 +724,7 @@ img {
   transform: translate(-50%, -50%) scale(0.3);
 }
 
-.modal-btn {
+.close-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -736,14 +743,14 @@ img {
   transition: fill var(--anim-main);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.close-btn:hover,
+.close-btn:focus {
   fill: var(--accent-txt-cl);
 }
 
 /* register form */
 
-.modal-title {
+.modal__title {
   display: block;
   margin: 0 auto 12px;
   font-weight: 700;
@@ -753,11 +760,11 @@ img {
   letter-spacing: 0.03em;
 }
 
-.register-form-group {
+.register__group {
   margin-bottom: 20px;
 }
 
-.register-form-wrap {
+.register__wrap {
   position: relative;
   display: block;
   margin-bottom: 10px;
@@ -767,18 +774,17 @@ img {
   letter-spacing: 0.01em;
 }
 
-.register-form-wrap:last-child {
+.register__wrap:last-child {
   margin-bottom: 0;
 }
 
-.register-form-label {
+.register__label {
   display: block;
   margin-bottom: 4px;
   color: var(--secondary-txt-cl);
 }
 
-.register-form-input,
-.register-form-comment {
+.register__input {
   padding: 12px 16px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -788,57 +794,65 @@ img {
   transition: border-color var(--anim-main);
 }
 
-.register-form-comment {
+.register__comment {
   min-height: 120px;
   resize: none;
+
+  padding: 12px 16px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: var(--accent-txt-cl);
+
+  transition: border-color var(--anim-main);
 }
 
-.register-form-comment::placeholder {
+.register__comment::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.register-form-icon {
+.register__icon {
   position: absolute;
   top: 29px;
   left: 12px;
   transition: fill var(--anim-main);
 }
 
-.register-form-input {
+.register__input {
   padding-left: 42px;
 }
 
-.register-form-input:hover,
-.register-form-comment:hover,
-.register-form-input:focus,
-.register-form-comment:focus,
-.register-form-input:hover + .register-form-icon,
-.register-form-comment:hover + .register-form-icon,
-.register-form-input:focus + .register-form-icon,
-.register-form-comment:focus + .register-form-icon {
+.register__input:hover,
+.register__comment:hover,
+.register__input:focus,
+.register__comment:focus,
+.register__input:hover + .register__icon,
+.register__comment:hover + .register__icon,
+.register__input:focus + .register__icon,
+.register__comment:focus + .register__icon {
   border-color: var(--accent-txt-cl);
   fill: var(--accent-txt-cl);
 }
 
-.register-form-agreement {
+.agreement {
   position: relative;
   display: block;
   margin-bottom: 30px;
   text-align: center;
 }
 
-.register-form-agreement-text {
+.agreement__text {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-txt-cl);
 }
 
-.register-form-agreement-link {
+.agreement__link {
   color: var(--accent-txt-cl);
 }
 
-.register-agreement-icon {
+.agreement__icon {
   position: absolute;
   top: 0px;
   bottom: 0;
@@ -846,21 +860,11 @@ img {
   left: 12px;
 }
 
-.register-agreement-icon-check {
+.agreement__icon--check {
   opacity: 0;
   transition: opacity var(--anim-main);
 }
 
-.register-chekbox:checked ~ .register-agreement-icon .register-agreement-icon-check {
+.agreement__chekbox:checked ~ .agreement__icon .agreement__icon--check {
   opacity: 1;
-}
-
-.register-form-btn {
-  margin: 0 auto;
-  padding: 10px 52px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  text-align: center;
-  letter-spacing: 0.06em;
 }
